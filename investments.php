@@ -1,4 +1,3 @@
-
 <?php include("header.php");?>
         <div class="banner" style="grid-area: banner;">Investments</div>
         <section class="summary">
@@ -7,7 +6,6 @@
             <p>Total Investments: $5000</p>
             <button>Add Account</button>
         </section>
-
         <form method="post" action="getCurrentStockPrice.php" action="getStockRecomendation">
             <label>To get current information about a stock input a stocks symbol below</label>
             <br>
@@ -47,7 +45,6 @@
                     </tr>
                 </table>
                 ";
-
             }
             else{
                 echo "<p></p>";
@@ -78,5 +75,4 @@
                 <!-- Add more rows dynamically -->
             </table>
         </section>
-
 <?php include("footer.php");?>

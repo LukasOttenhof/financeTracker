@@ -4,12 +4,12 @@ $username = "root";
 $password = ""; 
 $database = "finance_tracker"; 
 // Create connection
-//$conn = new mysqli($servername, $username, $password, $database);
-
+$conn = new mysqli($servername, $username, $password, $database);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
 ?>
 <script>
 function myFunction() {
@@ -21,7 +21,6 @@ function myFunction() {
   }
 }
 </script>
-
 <!DOCTYPE html>
 <html lang="en">
 <header style="grid-area: header;">
@@ -38,7 +37,7 @@ function myFunction() {
             <ul>
                 <li><a href="home.php">Home</a></li>
                 <li><a href="#">Transactions</a></li>
-                <li><a href="investments.php">Investments</a>
+                <li class="w3-dropdown-hover"><a href="investments.php">Investments</a>
                     <div class="w3-dropdown-content w3-bar-block w3-border">
                         <a href="#" class="w3-bar-item w3-button">Overview</a>
                         <a href="#" class="w3-bar-item w3-button">Add or Remove Asset</a>
@@ -61,4 +60,4 @@ function myFunction() {
         </nav>
     </header>
 
-    <main></main>
+    <main>
